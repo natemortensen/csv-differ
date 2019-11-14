@@ -1,0 +1,24 @@
+{
+  "name": "csv-differ",
+  "version": "1.0.0",
+  "description": "Parses a CSV and outputs an item-by-item diff against a collection of objects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/natemortensen/csv-differ.git"
+  },
+  "keywords": [
+    "csv",
+    "diff",
+    "parse"
+  ],
+  "author": "Nate Mortensen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/natemortensen/csv-differ/issues"
+  },
+  "homepage": "https://github.com/natemortensen/csv-differ#readme"
+}
