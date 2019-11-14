@@ -1,6 +1,6 @@
 {
   "name": "csv-differ",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Parses a CSV and outputs an item-by-item diff against a collection of objects.",
   "main": "./dist",
   "scripts": {
@@ -32,6 +32,9 @@
     "object-path": "^0.11.4",
     "papaparse": "^5.1.0"
   },
+  "files": [
+    "dist"
+  ],
   "devDependencies": {
     "@babel/cli": "^7.7.0",
     "@babel/core": "^7.7.2",
