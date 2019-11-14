@@ -88,4 +88,4 @@ function detectChanges(csv, options) {
   })
 }
 
-export default detectChanges
+module.exports = detectChanges
