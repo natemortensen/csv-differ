@@ -1,6 +1,6 @@
 {
   "name": "csv-differ",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Parses a CSV and outputs an item-by-item diff against a collection of objects.",
   "main": "./dist",
   "scripts": {
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/adaltas/node-csv"
+    "url": "https://github.com/natemortensen/csv-differ"
   },
   "keywords": [
     "csv",
