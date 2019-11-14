@@ -42,5 +42,15 @@ test('basic tests', async () => {
   )
 
   expect(service.records).toBe(records)
+  expect(service.changedRecords.length).toEqual(2)
 
+  // First record
+  expect(service.changedRecords[0].diff.added).toMatchObject({})
+  expect(service.changedRecords[0].diff.deleted).toMatchObject({})
+  expect(service.changedRecords[0].diff.updated).toMatchObject({ door: 'closed', status: 'inactive' })
+
+  // Second record
+  expect(service.changedRecords[1].diff.added).toMatchObject({ door: 'open' })
+  expect(service.changedRecords[1].diff.deleted).toMatchObject({})
+  expect(service.changedRecords[1].diff.updated).toMatchObject({})
 });
