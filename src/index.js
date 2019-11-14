@@ -88,8 +88,4 @@ function detectChanges(csv, options) {
   })
 }
 
-export {
-  detectChanges
-}
-
 export default detectChanges

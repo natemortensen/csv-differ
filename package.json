@@ -2,13 +2,14 @@
   "name": "csv-differ",
   "version": "1.0.0",
   "description": "Parses a CSV and outputs an item-by-item diff against a collection of objects.",
-  "main": "index.js",
+  "main": "./dist",
   "scripts": {
+    "build": "babel --out-dir dist src",
     "test": "jest --verbose"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/natemortensen/csv-differ.git"
+    "url": "https://github.com/adaltas/node-csv"
   },
   "keywords": [
     "csv",
@@ -23,12 +24,17 @@
   "homepage": "https://github.com/natemortensen/csv-differ#readme",
   "dependencies": {
     "deep-object-diff": "^1.1.0",
-    "jest": "^24.9.0",
     "lodash.frompairs": "^4.0.1",
     "lodash.isempty": "^4.4.0",
     "lodash.pick": "^4.4.0",
     "lodash.pickby": "^4.6.0",
     "object-path": "^0.11.4",
     "papaparse": "^5.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.0",
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "jest": "^24.9.0"
   }
 }
